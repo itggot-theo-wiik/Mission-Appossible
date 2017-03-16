@@ -47,7 +47,6 @@ p {
     font-size: 14px;
 }
 
-
 /*---MAIN---*/
 
 main {
@@ -88,11 +87,24 @@ main {
     padding: 40px;
 }
 
+
+/*---NAVIGATION---*/
+
+.fab {
+    width: 50px;
+    height: 50px;
+    background-color: #ff1744;
+    border-radius: 100px;
+    bottom: 0;
+    right: 0;
+}
+
+
 /*---NAVIGATION---*/
 
 nav {
     width: 304px;
-    height: 100px;
+    height: 50vh;
     background-color: red;
 }
 
@@ -103,29 +115,79 @@ nav {
 }
 
 .nav_header {
-    background-color: blue;
+    color: white;
     height: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    background-image: url(../img/space.jpg);
+    background-size: cover;
 }
 
 .nav_header_text {
-    background-color: yellow;
     margin-left: 16px;
     margin-bottom: 20px;
-
 }
 
 .nav_header_img {
     margin-left: 16px;
-
 }
 
 .nav_list {
     height: 100%;
     width: 100%;
     background-color: pink;
+}
+
+
+/*---SCANNER---*/
+
+#scanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.scanner {
+    height: 300px;
+    width: 300px;
+    background-color: #f21641;
+    border-radius: 1000px;
+    margin-top: 100px;
+}
+
+.scanner:hover {
+    background-color: #76ff03;
+}
+
+.upload {
+    min-height: 50px;
+    width: 100%;
+    background-color: #2196f3;
+    color: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    padding: 24px;
+}
+
+.progress_bar {
+    width: calc(100% - 48px);
+    height: 2px;
+    background-color: white;
+}
+
+.progress_bar_achieved {
+    background-color: #ff8a80;
+    width: 20%;
+    height: 100%;
+}
+
+
+.paragraph_with_opacity {
+    opacity: 54%;
+
 }
