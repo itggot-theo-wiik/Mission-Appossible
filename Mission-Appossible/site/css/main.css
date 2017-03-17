@@ -47,6 +47,7 @@ p {
     font-size: 14px;
 }
 
+
 /*---MAIN---*/
 
 main {
@@ -186,8 +187,6 @@ nav {
     height: 100%;
 }
 
-
 .paragraph_with_opacity {
     opacity: 54%;
-
 }
