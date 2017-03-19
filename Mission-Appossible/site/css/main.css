@@ -26,7 +26,7 @@ header {
 }
 
 
-/*---TEXT---*/
+/*---TEXT OCH LISTOR---*/
 
 a {
     color: black;
@@ -45,6 +45,26 @@ h3 {
 
 p {
     font-size: 14px;
+}
+
+.text_opacity_54 {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.text_opacity_87 {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.white_text {
+    color: white;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 26px;
 }
 
 
@@ -69,6 +89,25 @@ main {
     margin-bottom: 10px;
 }
 
+#card_storage {
+    display: flex;
+    flex-direction: column;
+}
+
+.storage {
+    background-color: #bababa;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 14px;
+    margin-bottom: 27px;
+}
+
+.storage_bar {
+    width: 50%;
+    background-color: #2196f3;
+    height: 2px;
+}
+
 .icon_thumbnail {
     height: 120px;
 }
@@ -89,7 +128,7 @@ main {
 }
 
 
-/*---NAVIGATION---*/
+/*---FAB---*/
 
 .fab {
     width: 56px;
@@ -111,8 +150,8 @@ main {
 
 nav {
     width: 304px;
-    height: 50vh;
-    background-color: red;
+    height: auto;
+    background-color: #fafafa;
 }
 
 .profile_icon {
@@ -122,7 +161,6 @@ nav {
 }
 
 .nav_header {
-    color: white;
     height: 200px;
     width: 100%;
     display: flex;
@@ -145,7 +183,10 @@ nav {
 .nav_list {
     height: 100%;
     width: 100%;
-    background-color: pink;
+}
+
+#nav_icon {
+    padding-right: 35px;
 }
 
 
@@ -197,26 +238,14 @@ nav {
     opacity: 54%;
 }
 
-/*@media (min-width: 1000px) {
-    .row2 {
-        display: flex;
-        flex-direction: flex;
 
-    }
+/*---MEDIA QUERY---*/
 
-}*/
-
-@media (min-width: 1070px) {
-    .row1 {
-      display: flex;
-      flex-direction: row;
-
-    }
-
+@media (min-width: 900px) {
     .card {
+        float: left;
         margin-left: 24px;
         margin-right: 0;
         width: 380px;
-        /*width: 420px;*/
     }
 }
