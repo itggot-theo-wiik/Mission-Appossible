@@ -7,6 +7,8 @@
     text-decoration: none;
 }
 
+body {}
+
 header {
     background-color: #2196f3;
     width: 100%;
@@ -21,7 +23,7 @@ header {
     position: fixed;
 }
 
-.icon {
+.icon, #nav_icon {
     width: 24px;
 }
 
@@ -148,20 +150,21 @@ main {
 
 /*---NAVIGATION---*/
 
-nav {
+.nav_main {
     width: 304px;
-    height: auto;
+    height: 100vh;
     background-color: #fafafa;
 }
 
 .profile_icon {
     height: 64px;
     border-radius: 100px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
+    margin-top: 16px;
 }
 
 .nav_header {
-    height: 200px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -180,15 +183,10 @@ nav {
     margin-left: 16px;
 }
 
-.nav_list {
-    height: 100%;
-    width: 100%;
-}
-
 #nav_icon {
     padding-right: 35px;
+    color: rgba(0, 0, 0, 0.54);
 }
-
 
 /*---SCANNER---*/
 
