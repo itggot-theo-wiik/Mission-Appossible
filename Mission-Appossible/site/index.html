@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <img src="./img/ic_menu_white_48px.svg" class="icon">
+        <img src="./img/ic_menu_white_48px.svg" class="icon" onclick="menu_toggler()">
         <h2>Home</h2>
 
         <div class="icon_container">
@@ -21,6 +21,60 @@
     </header>
 
     <main>
+        <!-- NAV START -->
+        <nav>
+            <div class="nav_main">
+                <div class="nav_header">
+
+                    <div class="nav_header_img">
+                        <img src="./img/joe_danger_profile_icon.jpg" class="profile_icon" />
+                    </div>
+
+                    <div class="nav_header_text">
+                        <!-- <h3>Joe Danger</h3> -->
+                        <p class="white_text">joe.danger@gmail.com</p>
+
+                    </div>
+                </div>
+                <div class="nav_list">
+                    <ul>
+                        <a href="index.html">
+                            <li><i class="material-icons" id="nav_icon">menu</i>
+                                <p class="text_opacity_87">Home</p>
+                            </li>
+                        </a>
+                        <a href="scan.html">
+                            <li><i class="material-icons" id="nav_icon">camera</i>
+                                <p class="text_opacity_87">Scan</p>
+                            </li>
+                        </a>
+                        <a href="inventory.html">
+                            <li><i class="material-icons" id="nav_icon">assignment</i>
+                                <p class="text_opacity_87">Inventory</p>
+                            </li>
+                        </a>
+                        <a href="recommended.html">
+                            <li><i class="material-icons" id="nav_icon">star</i>
+                                <p class="text_opacity_87">Recommended</p>
+                            </li>
+                        </a>
+                        <a href="trade.html">
+                            <li><i class="material-icons" id="nav_icon">compare_arrows</i>
+                                <p class="text_opacity_87">Trade</p>
+                            </li>
+                        </a>
+                        <a href="help.html">
+                            <li><i class="material-icons" id="nav_icon">help</i>
+                                <p class="text_opacity_87">Help & Feedback</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_leave" onclick="menu_toggler()"></div>
+        </nav>
+        <!-- NAV END -->
+
         <!-- CARD -->
         <a href="www.google.com">
             <div class="card" id="card_storage">
@@ -91,6 +145,7 @@
 
 
     <!-- <%= yield %> -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

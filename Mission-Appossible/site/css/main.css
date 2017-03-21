@@ -89,6 +89,7 @@ main {
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+    border-radius: 2px;
 }
 
 #card_storage {
@@ -150,10 +151,35 @@ main {
 
 /*---NAVIGATION---*/
 
+nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
 .nav_main {
     width: 304px;
     height: 100vh;
     background-color: #fafafa;
+    -webkit-box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
+    z-index: 3;
+    position: fixed;
+}
+
+.nav_is_visible {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_leave {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
 }
 
 .profile_icon {
@@ -188,6 +214,7 @@ main {
     color: rgba(0, 0, 0, 0.54);
 }
 
+
 /*---SCANNER---*/
 
 #scanner {
@@ -209,10 +236,16 @@ main {
     background-color: #76ff03;
 }
 
+.upload_container {
+    background-color: #2196f3;
+    width: 100%;
+}
+
 .upload {
     min-height: 50px;
     width: 100%;
-    background-color: #2196f3;
+    max-width: 500px;
+    background-color: hotpink;
     color: white;
     bottom: 0;
     left: 0;
@@ -236,8 +269,26 @@ main {
     opacity: 54%;
 }
 
+.nav_shadow {
+    background-color: hotpink;
+    height: 100%;
+    width: 100%;
+}
+
 
 /*---MEDIA QUERY---*/
+
+
+/*---NAV SKUGGA---*/
+
+@media (min-width: 450px) {
+    .nav_main {
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+}
+
+
+/*---MEDIUM---*/
 
 @media (min-width: 900px) {
     .card {
@@ -246,4 +297,9 @@ main {
         margin-right: 0;
         width: 380px;
     }
+}
+
+.animate {
+    height: 0px;
+    transition: height 1s;
 }
