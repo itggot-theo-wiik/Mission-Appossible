@@ -158,8 +158,9 @@ nav {
     position: absolute;
     /*width: 100vw;*/
     z-index: 2;
-    /*top: 0;
-    left: 0;*/
+    top: 0;
+    left: 0;
+    left: -304px;
 }
 
 .nav_main {
@@ -173,10 +174,16 @@ nav {
     position: fixed;
 }
 
-.nav_is_visible {
-    display: flex;
-    flex-direction: row;
+.nav_shadow_not_visible {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
+
+.nav_is_visible {
+    display: block;
+}
+
 
 /*.nav_leave {
     height: 100vh;
