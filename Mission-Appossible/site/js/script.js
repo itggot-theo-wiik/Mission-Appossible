@@ -1,8 +1,8 @@
-function menu_toggler() {
-    element = document.querySelector("nav")
-    element.classList.toggle("nav_is_visible")
-
-}
+// function menu_toggler() {
+//     element = document.querySelector("nav")
+//     element.classList.toggle("nav_is_visible")
+//
+// }
 
 // function menu_toggler() {
 //     document.querySelector("nav").style.width = "250px";
@@ -20,3 +20,11 @@ function menu_toggler() {
 // $('add').on('transitionend', function(e){
 // $(e.target).remove()
 // });
+
+$(document).ready(function() {
+    $("button").click(function() {
+        $("nav").animate({
+            left: '250px'
+        });
+    });
+});
