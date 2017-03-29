@@ -235,9 +235,36 @@ nav {
     margin-right: 5px;
 }
 
-.intro {}
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2196f3;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 100px;
+}
 
-.intro_text {}
+#intro_icon {
+    font-size: 250px;
+    padding-bottom: 70px;
+}
+
+.intro_header {
+    margin-bottom: 22px;
+}
+
+.intro_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 .intro_nav {
     height: 58px;
@@ -258,8 +285,6 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: white;
-    background-color: #2196f3;
 }
 
 #left {
@@ -383,4 +408,11 @@ nav {
 .animate {
     height: 0px;
     transition: height 1s;
+}
+
+
+/*---JS CLASSER---*/
+
+.hider {
+    display: none;
 }

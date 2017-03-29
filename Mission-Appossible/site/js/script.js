@@ -4,6 +4,12 @@
 //
 // }
 
+function hider_js() {
+    // element.classList.toggle("hider")
+    element = document.querySelector("intro")
+    element.classList.toggle("hider")
+}
+
 $(document).ready(function() {
     $("button").click(function() {
         $("nav").animate({
