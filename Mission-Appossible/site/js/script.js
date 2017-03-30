@@ -4,12 +4,21 @@
 //
 // }
 
+// Hamburgar meny v2
+function burger() {
+    element = document.querySelector("nav_main")
+    element.classList.add("burger")
+
+}
+
+// För introt
 function hider_js() {
     // element.classList.toggle("hider")
     element = document.querySelector("intro")
     element.classList.toggle("hider")
 }
 
+// Nedan = Inte så bra
 $(document).ready(function() {
     $("button").click(function() {
         $("nav").animate({

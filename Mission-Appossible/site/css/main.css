@@ -152,19 +152,18 @@ main {
 /*---NAVIGATION---*/
 
 nav {
-    display: none;
-    display: block;
     position: fixed;
     position: absolute;
     /*width: 100vw;*/
     z-index: 2;
     top: 0;
     left: 0;
-    left: -304px;
 }
 
 .nav_main {
+    display: none;
     width: 304px;
+    width: 0px;
     height: 100vh;
     background-color: #fafafa;
     -webkit-box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
@@ -405,14 +404,19 @@ nav {
     }
 }
 
+/*---JS CLASSER---*/
+
 .animate {
     height: 0px;
     transition: height 1s;
 }
 
-
-/*---JS CLASSER---*/
-
 .hider {
     display: none;
+}
+
+.burger {
+    display: block;
+    width: 304px;
+    transition: 1s ease;
 }
