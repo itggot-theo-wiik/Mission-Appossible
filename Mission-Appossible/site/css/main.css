@@ -157,13 +157,12 @@ nav {
     /*width: 100vw;*/
     z-index: 2;
     top: 0;
-    left: 0;
+    left: -304px;
 }
 
 .nav_main {
-    display: none;
     width: 304px;
-    width: 0px;
+    /*width: 0px;*/
     height: 100vh;
     background-color: #fafafa;
     -webkit-box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
@@ -171,12 +170,6 @@ nav {
     box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
     z-index: 3;
     position: fixed;
-}
-
-.nav_shadow_not_visible {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
 .nav_is_visible {
@@ -405,6 +398,12 @@ nav {
 }
 
 /*---JS CLASSER---*/
+
+.nav_shadow_not_visible {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
 
 .animate {
     height: 0px;
