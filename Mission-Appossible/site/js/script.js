@@ -37,10 +37,6 @@ $(document).ready(function() {
     $(".exit_button").click(function() {
         $("nav").animate({
             left: '-304px'
-            function shadow_hider() {
-                element = document.querySelector(".nav_main")
-                element.classList.toggle("nav_shadow_not_visible")
-            }
         });
     });
 });
