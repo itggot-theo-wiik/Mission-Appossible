@@ -15,7 +15,7 @@
     <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
 
     <header>
-        <img src="./img/ic_menu_white_48px.svg" class="icon" onclick="burger()">
+        <img src="./img/ic_menu_white_48px.svg" class="icon" id="burger" onclick="toggle_shadow(); toggle_leave()">
         <h2>Home</h2>
 
         <div class="icon_container">
@@ -72,11 +72,10 @@
                             </li>
                         </a>
                     </ul>
-                    <button class="exit_button" onclick="shadow_hider()">press me</button>
                 </div>
             </div>
 
-            <div class="nav_leave"></div>
+            <div class="nav_leave" onclick="toggle_shadow(); toggle_leave()"></div>
         </nav>
         <!-- NAV END -->
 
@@ -152,11 +151,6 @@
 
             </div>
         </a>
-
-        <div class="card">
-            <button onclick="shadow_hider()">press me</button>
-            <div class="hehe" style="width:50px;height:50px;background-color:red" onclick="shadow_hider()"></div>
-        </div>
 
     </main>
 
