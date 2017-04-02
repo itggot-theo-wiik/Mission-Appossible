@@ -358,14 +358,81 @@ nav {
 }
 
 .nav_shadow {
-    background-color: hotpink;
     height: 100%;
     width: 100%;
 }
 
 
-/*---MEDIA QUERY---*/
+/*---INVENTORY---*/
 
+.inventory {
+    height: auto;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+}
+
+.inv_date {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+/*---TRADE---*/
+
+.trade {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.trade_box {
+    height: calc(50vw - 46px);
+    width: calc(50vw - 46px);
+    max-height: 350px;
+    max-width: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.54);
+    /*background-color: #2196f3;*/
+    border-radius: 2px;
+}
+
+.button {
+    background-color: #2196f3;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 20px;
+    height: 36px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+#icon_trade {
+    color: #2196f3;
+    font-size: 48px;
+    margin: 4px;
+
+}
 
 /*---NAV SKUGGA---*/
 
@@ -390,6 +457,9 @@ nav {
         width: 420px;
         margin-bottom: 80px;
         transition: 1.1s ease;
+    }
+    .inventory {
+        width: 868px;
     }
 }
 
