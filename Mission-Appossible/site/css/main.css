@@ -23,8 +23,10 @@ header {
     position: fixed;
 }
 
-.icon {
+.icon, #icon {
     width: 24px;
+    font-size: 24px;
+    color: white;
 }
 
 
@@ -222,6 +224,7 @@ li {
     height: 48px;
 }
 
+
 /*---INTRO---*/
 
 .circle {
@@ -410,6 +413,14 @@ li {
     font-size: 16px;
 }
 
+.inv_icon, #inv_icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+    font-size: 40px;
+    color: #2196f3;
+}
+
 .inv_date {
     height: 100%;
     width: 100%;
@@ -418,6 +429,10 @@ li {
     justify-content: flex-end;
     color: rgba(0, 0, 0, 0.54);
     font-size: 14px;
+}
+
+#inv_header {
+    color: black;
 }
 
 
@@ -474,6 +489,61 @@ li {
 }
 
 
+/*---ASIDE---*/
+
+aside {
+    display: none;
+    background-color: #2196f3;
+    color: white;
+    border-radius: 2px;
+    height: 350px;
+    width: 400px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    /*padding: 16px;*/
+}
+
+.aside_text {
+    margin: 16px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards {
+    width: 1300px;
+}
+
+.buy {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    height: 120px;
+    width: 100%;
+}
+
+.buy_section {
+    width: 50%;
+    height: 100px;
+    color: #2196f3;
+    padding-top: 16px;
+}
+
+#buy_title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    text-align: center;
+}
+
+#buy_button {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+
 /*---NAV SKUGGA---*/
 
 @media (min-width: 450px) {
@@ -500,6 +570,21 @@ li {
     }
     .inventory {
         width: 868px;
+    }
+}
+
+
+/*---ASIDE---*/
+
+@media (min-width: 1300px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+    }
+    .cards {
+        width: 70vw;
     }
 }
 
