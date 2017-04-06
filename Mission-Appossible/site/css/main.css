@@ -394,7 +394,7 @@ li {
 
 .inventory {
     height: auto;
-    max-width: 100%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -441,14 +441,18 @@ li {
 .trade {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+}
+
+#trade_header {
+    color: #2196f3;
 }
 
 .trade_column {
     height: auto;
     width: calc(50vw - 20px);
-    background-color: pink;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -486,6 +490,12 @@ li {
     color: #2196f3;
     font-size: 48px;
     margin: 10px;
+    margin-top: 200px;
+    transition: 0.5s ease;
+}
+
+.inv_trade {
+    margin: 0;
 }
 
 
@@ -544,6 +554,19 @@ aside {
 }
 
 
+/*---TRADE SIDA---*/
+
+@media (max-width: 550px) {
+    .inv_date {
+        display: none;
+    }
+    #icon_trade {
+        margin-top: 100px;
+
+    }
+}
+
+
 /*---NAV SKUGGA---*/
 
 @media (min-width: 450px) {
@@ -553,7 +576,7 @@ aside {
 }
 
 
-/*---MEDIUM---*/
+/*---MEDIUM / PC---*/
 
 @media (min-width: 900px) {
     .card {
@@ -571,6 +594,9 @@ aside {
     .inventory {
         width: 868px;
     }
+    .inv_trade {
+        width: 100%;
+    }
 }
 
 
@@ -584,7 +610,7 @@ aside {
         position: relative;
     }
     .cards {
-        width: 70vw;
+        width: 57vw;
     }
 }
 
