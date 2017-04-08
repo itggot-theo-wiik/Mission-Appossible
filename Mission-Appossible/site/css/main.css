@@ -127,7 +127,7 @@ main {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding: 40px;
+    padding: 16px;
 }
 
 
@@ -701,8 +701,11 @@ aside {
         justify-content: space-between;
         position: relative;
     }
+    .card {
+        max-width: 350px;
+    }
     .cards {
-        width: 1230px;
+        width: 1145px;
     }
 }
 
