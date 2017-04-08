@@ -155,8 +155,10 @@ nav {
     position: fixed;
     position: absolute;
     /*width: 100vw;*/
+    height: 100vh;
     z-index: 2;
     top: 0;
+    left: 0;
     left: -304px;
 }
 
@@ -164,6 +166,7 @@ nav {
     width: 304px;
     /*width: 0px;*/
     height: 100vh;
+    min-height: 700px;
     background-color: #fafafa;
     z-index: 3;
     position: fixed;
@@ -477,6 +480,7 @@ li {
     width: 20px;
     height: 36px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     border-radius: 2px;
     display: flex;
     justify-content: center;
@@ -562,7 +566,6 @@ aside {
     }
     #icon_trade {
         margin-top: 100px;
-
     }
 }
 
@@ -626,6 +629,7 @@ aside {
     -moz-box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
     box-shadow: 0px 0px 108px 137px rgba(0, 0, 0, 0.27);
     transition: 1s ease;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .animate {
