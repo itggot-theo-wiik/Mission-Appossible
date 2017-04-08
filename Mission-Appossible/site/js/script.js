@@ -30,7 +30,7 @@ $(document).ready(function() {
 // Klocka
 function daty() {
     var d = new Date();
-    document.getElementById("demo").innerHTML = d.toDateString();
+    document.getElementById("date").innerHTML = d.toDateString();
 }
 
 // För introt
@@ -47,4 +47,25 @@ function hider_js() {
     //element = document.querySelector(".intro")
     //current = element.clssList[1]
 
+}
+
+// Loading bar
+function move() {
+
+    var elem = document.getElementById("myBar");
+    var width = 1;
+    var id = setInterval(frame, 25);
+
+    function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            elem.style.width = width + '%';
+        }
+        if (width == 100) {
+          element = document.querySelector(".button_scanned");
+          element.classList.add("display_button");
+        }
+    }
 }

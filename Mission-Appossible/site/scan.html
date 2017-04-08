@@ -21,22 +21,29 @@
         <h2>Scan</h2>
 
         <div class="icon_container">
-            <img src="./img/ic_more_vert_white_48px.svg" class="icon">
+            <i class="material-icons icon">more_vert</i>
         </div>
     </header>
 
     <main id="scanner">
-        <div class="scanner"></div>
+        <div class="scanner" onclick="move()"></div>
+        <a href="inventory.html">
+            <div class="button button_scanned">
+                DONE
+            </div>
+        </a>
     </main>
+
+
 
     <div class="upload_container">
         <div class="upload">
             <h3>Progress</h3>
-            <p class="paragraph_with_opacity">
+            <!-- <p class="paragraph_with_opacity">
                 38%
-            </p>
+            </p> -->
             <div class="progress_bar">
-                <div class="progress_bar_achieved"></div>
+                <div class="progress_bar_achieved" id="myBar"></div>
             </div>
         </div>
     </div>

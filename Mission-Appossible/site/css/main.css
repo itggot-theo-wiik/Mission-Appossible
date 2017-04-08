@@ -196,7 +196,7 @@ nav {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-image: url(../img/space.jpg);
+    background-image: url(../img/nav_header.png);
     background-size: cover;
     margin-bottom: 16px;
 }
@@ -268,6 +268,7 @@ li {
 
 #intro_icon {
     font-size: 250px;
+    width: 250px;
     padding-bottom: 70px;
 }
 
@@ -379,7 +380,7 @@ li {
 
 .progress_bar_achieved {
     background-color: #ff8a80;
-    width: 38%;
+    width: 0%;
     height: 100%;
 }
 
@@ -480,7 +481,7 @@ li {
     width: 20px;
     height: 36px;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 2px;
     display: flex;
     justify-content: center;
@@ -488,6 +489,10 @@ li {
     margin-left: auto;
     margin-right: auto;
     margin-top: 16px;
+}
+
+.button_scanned {
+    display: none;
 }
 
 #icon_trade {
@@ -558,6 +563,54 @@ aside {
 }
 
 
+/*---RECOMMENDED---*/
+
+.recommended {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+}
+
+.recommended_highlight {
+    width: 70vw;
+    height: 70vw;
+    max-width: 350px;
+    max-height: 350px;
+    background-color: #2196f3;
+    border-radius: 1000px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.recommended_date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#recommended_icon {
+    font-size: 130px;
+}
+
+.recommended_name {
+    text-align: center;
+    margin-top: 16px;
+}
+
+#date {
+    color: #2196f3;
+    margin-left: 10px;
+    padding: 0;
+}
+
+
 /*---TRADE SIDA---*/
 
 @media (max-width: 550px) {
@@ -575,6 +628,42 @@ aside {
 @media (min-width: 450px) {
     .nav_shadow_is_visible {
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    }
+}
+
+
+/*---MINI MOBILER---*/
+
+@media (max-width: 400px) {
+    main {
+        background-color: pink;
+    }
+    .icon_container {
+        padding: 0px;
+    }
+    /*#icon_thumbnail {
+        font-size: 80px;
+    }*/
+    .scanner {
+        height: calc(100vw - 80px);
+        width: calc(100vw - 80px);
+        margin-bottom: 0px;
+        margin-top: -63px;
+    }
+    #trade_main {
+        padding-top: 63px;
+    }
+    .intro {
+        padding-top: 16px;
+    }
+    #intro_icon {
+        padding-bottom: 5px;
+    }
+    #day_reminder, #separator {
+        display: none;
+    }
+    #date {
+        margin-left: 0;
     }
 }
 
@@ -613,7 +702,7 @@ aside {
         position: relative;
     }
     .cards {
-        width: 57vw;
+        width: 1230px;
     }
 }
 
@@ -622,6 +711,13 @@ aside {
 
 .nav_is_visible {
     display: block;
+}
+
+.display_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_shadow_is_visible {

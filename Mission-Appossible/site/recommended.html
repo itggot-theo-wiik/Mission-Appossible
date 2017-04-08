@@ -13,6 +13,9 @@
 <body>
     <script language="JavaScript" type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/script.js"></script>
+    <script>
+        window.onload = daty;
+    </script>
 
     <header>
         <a href="index.html">
@@ -26,14 +29,25 @@
     </header>
 
     <main>
-        <div class="cheat" style="height:80px;width:59px;background-color:green" onclick="daty()" onload="daty()"></div>
-        <p id="demo" onload="daty()"></p>
-        <h1>Today is: </h1>
-        <p>
-            So you would probably like to use:
-        </p>
+        <div class="recommended">
+            <div class="recommended_date">
+                <h1 id="day_reminder">Today is:</h1>
+                <h3 id="date" onload="daty()"></h3>
+            </div>
 
+            <p>
+                <br / id="separator">So you would probably like to print:
+            </p>
 
+            <div class="recommended_highlight">
+                <i class="material-icons" id="recommended_icon">weekend</i>
+            </div>
+
+            <h1 class="recommended_name">Sofa</h1>
+            <a href="index.html">
+                <div class="button">PRINT</div>
+            </a>
+        </div>
     </main>
 
     <a href="scan.html">
