@@ -30,7 +30,7 @@ header {
 }
 
 .more_vert {
-    padding-right: 16px;
+    padding-right: 32px;
 }
 
 
@@ -741,6 +741,11 @@ footer {
     .inv_date {
         display: none;
     }
+    .size {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
     #icon_trade {
         margin-top: 100px;
     }
@@ -762,6 +767,9 @@ footer {
     .nav_header {
         display: none;
     }
+    .nav_main {
+        width: 270px;
+    }
     .nav_header1 {
         display: flex;
         flex-direction: row;
@@ -770,9 +778,13 @@ footer {
     .icon_container {
         padding: 0px;
     }
-    /*#icon_thumbnail {
-        font-size: 80px;
-    }*/
+    .inv_trade {
+        min-height: 0;
+    }
+    .trade_box {
+        min-height: calc(50vw - 46px);
+        height: auto;
+    }
     .scanner {
         height: calc(100vw - 80px);
         width: calc(100vw - 80px);
